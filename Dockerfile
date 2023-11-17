@@ -1,4 +1,4 @@
-FROM golang:alpine AS builder
+FROM --platform=linux/amd64 golang:alpine AS builder
 
 ENV GO111MODULE=on \
     CGO_ENABLED=0 \
